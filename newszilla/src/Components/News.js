@@ -43,7 +43,7 @@ export class News extends Component {
   }
 
   async fetchArticles() {
-    let url = `http://localhost:5000/api/news?country=${this.props.country}&category=${this.props.category}&pageSize=${this.props.pageSize}`;
+    let url = `https://newszill-backend.onrender.com/api/news?country=${this.props.country}&category=${this.props.category}&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
 
     try {
