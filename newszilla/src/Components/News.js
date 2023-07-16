@@ -46,7 +46,7 @@ export class News extends Component {
     const { country, category, pageSize } = this.props;
     const { page } = this.state;
    
-    let url = `http://localhost:5000/api/news?country=${country}&category=${category}&pageSize=${pageSize}&page=${page}`;
+    let url = `https://newszill-backend.onrender.com/api/news?country=${country}&category=${category}&pageSize=${pageSize}&page=${page}`;
     this.setState({ loading: true });
   
     try {
